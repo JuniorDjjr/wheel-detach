@@ -67,7 +67,7 @@ public:
 					
 					while (true)
 					{
-						if (automobile->m_aCarNodes[wheelNode] && abs(DistanceBetweenPoints(automobile->m_aCarNodes[wheelNode]->ltm.pos, collisionPos)) < radius) break;
+						if (automobile->m_aCarNodes[wheelNode] && DistanceBetweenPoints(automobile->m_aCarNodes[wheelNode]->ltm.pos, collisionPos) < radius) break;
 						wheelNode++;
 						if (wheelNode > 7) return;
 					}
